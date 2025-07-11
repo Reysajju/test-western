@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Cancel() {
   return (
     <div className="min-h-[60vh] flex items-center justify-center bg-gray-50">
@@ -23,18 +25,18 @@ export default function Cancel() {
             Your payment was cancelled. If you have any questions, please don&apos;t hesitate to contact us.
           </p>
           <div className="space-x-4">
-            <a
+            <Link
               href="/contact"
               className="inline-block bg-primary-600 text-white px-8 py-3 rounded-lg hover:bg-primary-700 transition-colors"
             >
               Contact Us
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
               className="inline-block bg-white text-primary-600 border-2 border-primary-600 px-8 py-3 rounded-lg hover:bg-primary-50 transition-colors"
             >
               Return Home
-            </a>
+            </Link>
           </div>
         </div>
       </div>

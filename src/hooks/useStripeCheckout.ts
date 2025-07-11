@@ -1,10 +1,18 @@
-import { useState } from 'react';
-
 declare global {
   interface Window {
-    Stripe?: any;
+    Stripe?: (key: string) => StripeJSInstance;
   }
 }
+
+type StripeJSInstance = {
+  redirectToCheckout(options: { sessionId: string }): Promise<{ error?: { message: string } }>;
+};
+import { useState } from 'react';
+
+
+type StripeJS = {
+  redirectToCheckout(options: { sessionId: string }): Promise<{ error?: { message: string } }>;
+};
 
 export function useStripeCheckout() {
   const [loading, setLoading] = useState(false);
@@ -16,7 +24,7 @@ export function useStripeCheckout() {
       setError(null);
 
       // Load Stripe dynamically
-      const stripe = await loadStripe();
+      const stripe = (await loadStripe()) as StripeJSInstance | undefined;
       if (!stripe) {
         throw new Error('Stripe failed to load');
       }
@@ -63,12 +71,13 @@ export function useStripeCheckout() {
 
 // Helper function to load Stripe
 async function loadStripe() {
-  if (!process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY) {
+  const key = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+  if (!key) {
     throw new Error('Stripe publishable key is not set');
   }
 
   if (window.Stripe) {
-    return window.Stripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+    return window.Stripe(key);
   }
 
   const script = document.createElement('script');
@@ -78,7 +87,7 @@ async function loadStripe() {
   const promise = new Promise((resolve, reject) => {
     script.onload = () => {
       if (window.Stripe) {
-        resolve(window.Stripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY));
+        resolve(window.Stripe(key));
       } else {
         reject(new Error('Stripe.js failed to load'));
       }

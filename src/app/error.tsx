@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+
 export default function Error({
   error,
   reset,
@@ -24,20 +26,20 @@ export default function Error({
             />
           </svg>
         </div>
-        <h1 className="text-3xl font-bold text-gray-900">Something went wrong</h1>
+        <h1 className="text-3xl font-bold text-gray-900">
+          Something went wrong
+        </h1>
         <p className="text-gray-600 max-w-lg mx-auto">
-          {error.message || 'An unexpected error occurred. Please try again later.'}
+          {error.message ||
+            "An unexpected error occurred. Please try again later."}
         </p>
         <div className="flex justify-center gap-4">
-          <button
-            onClick={reset}
-            className="btn btn-primary"
-          >
+          <button onClick={reset} className="btn btn-primary">
             Try again
           </button>
-          <a href="/" className="btn btn-secondary">
+          <Link href="/" className="btn btn-secondary">
             Return Home
-          </a>
+          </Link>
         </div>
       </div>
     </div>
