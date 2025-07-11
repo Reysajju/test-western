@@ -10,9 +10,6 @@ type StripeJSInstance = {
 import { useState } from 'react';
 
 
-type StripeJS = {
-  redirectToCheckout(options: { sessionId: string }): Promise<{ error?: { message: string } }>;
-};
 
 export function useStripeCheckout() {
   const [loading, setLoading] = useState(false);
