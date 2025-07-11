@@ -1,0 +1,819 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import ContactForm from '../components/ContactForm.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Book Marketing Services | Western Publish"
+  description="Professional book marketing services including launch campaigns, social media marketing, author branding, and press outreach. Amplify your book's reach and connect with readers."
+  keywords="book marketing, book promotion, author branding, social media marketing, book launch, press release, book publicity, author website"
+>
+  <Navigation />
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Book Marketing Services</h1>
+          <p class="hero-subtitle">
+            Amplify your book's reach and connect with readers through strategic marketing campaigns. Our comprehensive marketing services help you build a lasting author brand and drive sales.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary btn-lg">Start Marketing</a>
+            <a href="#services" class="btn btn-outline btn-lg">Our Services</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Book marketing and promotion services" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Our Marketing Services</h2>
+        <p class="text-large">Comprehensive marketing solutions designed to maximize your book's visibility and sales potential.</p>
+      </div>
+      
+      <div class="marketing-services">
+        <div class="service-category">
+          <h3>Pre-Launch Marketing</h3>
+          <div class="service-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                </svg>
+              </div>
+              <h4>Author Branding</h4>
+              <p>Develop a strong, consistent author brand that resonates with your target audience and builds long-term recognition.</p>
+            </div>
+            
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
+                </svg>
+              </div>
+              <h4>Author Website</h4>
+              <p>Professional website design that showcases your work, connects with readers, and serves as your marketing hub.</p>
+            </div>
+            
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <h4>Email Marketing</h4>
+              <p>Build and nurture your reader list with targeted email campaigns that drive engagement and sales.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="service-category">
+          <h3>Launch Campaign</h3>
+          <div class="service-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/>
+                </svg>
+              </div>
+              <h4>Social Media Campaign</h4>
+              <p>Strategic social media marketing across platforms to build awareness and drive pre-orders and sales.</p>
+            </div>
+            
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+                </svg>
+              </div>
+              <h4>Press Release</h4>
+              <p>Professional press release writing and distribution to media outlets, book bloggers, and industry publications.</p>
+            </div>
+            
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <h4>Book Trailer</h4>
+              <p>Professional book trailer creation to showcase your book visually and generate excitement among potential readers.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="service-category">
+          <h3>Ongoing Promotion</h3>
+          <div class="service-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+              </div>
+              <h4>Book Reviews</h4>
+              <p>Outreach to book reviewers, bloggers, and influencers to generate authentic reviews and recommendations.</p>
+            </div>
+            
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                </svg>
+              </div>
+              <h4>Media Outreach</h4>
+              <p>Secure interviews, podcasts, and media appearances to increase visibility and establish author credibility.</p>
+            </div>
+            
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+              </div>
+              <h4>Sales Analytics</h4>
+              <p>Track and analyze your book's performance across platforms with detailed reporting and optimization recommendations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategy Section -->
+  <section class="strategy-section">
+    <div class="container">
+      <div class="strategy-content">
+        <div class="strategy-text">
+          <h2>Our Marketing Strategy</h2>
+          <p class="text-large">We develop customized marketing strategies based on your book's genre, target audience, and goals.</p>
+          
+          <div class="strategy-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Market Research</h3>
+                <p>Analyze your genre, competition, and target audience to identify the most effective marketing channels and strategies.</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Brand Development</h3>
+                <p>Create a compelling author brand that resonates with your audience and differentiates you from competitors.</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Campaign Launch</h3>
+                <p>Execute coordinated marketing campaigns across multiple channels to maximize reach and impact.</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Ongoing Optimization</h3>
+                <p>Monitor performance and adjust strategies to improve results and maximize return on investment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="strategy-image">
+          <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Marketing strategy and analytics" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marketing Packages Section -->
+  <section class="packages-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Marketing Packages</h2>
+        <p class="text-large">Choose the marketing package that best fits your book and budget.</p>
+      </div>
+      
+      <div class="packages-grid">
+        <div class="package-card">
+          <div class="package-header">
+            <h3>Starter Package</h3>
+            <div class="package-price">$499</div>
+            <div class="package-duration">30 Days</div>
+          </div>
+          <div class="package-features">
+            <ul>
+              <li>Social media campaign setup</li>
+              <li>Press release writing & distribution</li>
+              <li>Basic author website</li>
+              <li>Email marketing setup</li>
+              <li>Performance reporting</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+        
+        <div class="package-card featured">
+          <div class="package-ribbon">Most Popular</div>
+          <div class="package-header">
+            <h3>Professional Package</h3>
+            <div class="package-price">$999</div>
+            <div class="package-duration">60 Days</div>
+          </div>
+          <div class="package-features">
+            <ul>
+              <li>Complete social media management</li>
+              <li>Press release & media outreach</li>
+              <li>Professional author website</li>
+              <li>Email marketing campaigns</li>
+              <li>Book trailer creation</li>
+              <li>Review outreach program</li>
+              <li>Detailed analytics & reporting</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3>Premium Package</h3>
+            <div class="package-price">$1,999</div>
+            <div class="package-duration">90 Days</div>
+          </div>
+          <div class="package-features">
+            <ul>
+              <li>Full-service marketing campaign</li>
+              <li>Media interviews & podcasts</li>
+              <li>Premium author website & branding</li>
+              <li>Advanced email marketing</li>
+              <li>Professional book trailer</li>
+              <li>Influencer outreach program</li>
+              <li>Award submission assistance</li>
+              <li>Ongoing optimization</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Metrics Section -->
+  <section class="metrics-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Marketing Success Stories</h2>
+        <p class="text-large">Real results from our book marketing campaigns.</p>
+      </div>
+      
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon">
+            <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+            </svg>
+          </div>
+          <div class="metric-number">300%</div>
+          <div class="metric-label">Average Sales Increase</div>
+          <p>Our marketing campaigns typically deliver a 300% increase in sales during the first month.</p>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon">
+            <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+            </svg>
+          </div>
+          <div class="metric-number">50K+</div>
+          <div class="metric-label">Monthly Impressions</div>
+          <p>Our social media campaigns generate over 50,000 impressions monthly for our authors.</p>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon">
+            <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
+            </svg>
+          </div>
+          <div class="metric-number">25+</div>
+          <div class="metric-label">Media Placements</div>
+          <p>Average number of media placements secured for each author including interviews and reviews.</p>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon">
+            <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+            </svg>
+          </div>
+          <div class="metric-number">4.8</div>
+          <div class="metric-label">Average Rating Boost</div>
+          <p>Our review outreach programs help authors achieve higher average ratings and more reviews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>What Our Authors Say</h2>
+        <p class="text-large">Hear from authors who have successfully marketed their books with our help.</p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+          <blockquote>
+            "The marketing campaign transformed my book from unknown to bestseller. The social media strategy and press outreach generated incredible visibility and sales I never thought possible."
+          </blockquote>
+          <div class="testimonial-author">
+            <strong>Amanda Foster</strong>
+            <span>Author of "Digital Transformation"</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+          <blockquote>
+            "The author branding and website they created established my credibility as an expert in my field. The email marketing campaigns continue to drive sales months after launch."
+          </blockquote>
+          <div class="testimonial-author">
+            <strong>Dr. Michael Torres</strong>
+            <span>Author of "Leadership Excellence"</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+          <blockquote>
+            "The book trailer and media outreach campaign exceeded all expectations. I was featured in major publications and podcasts, which significantly boosted my book's visibility."
+          </blockquote>
+          <div class="testimonial-author">
+            <strong>Sarah Mitchell</strong>
+            <span>Author of "Mindful Living"</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <ContactForm 
+    title="Ready to Market Your Book?"
+    subtitle="Launch a successful marketing campaign for your book today. Contact us to discuss your marketing goals and learn how we can help you reach more readers."
+  />
+  
+  <!-- Footer -->
+  <Footer />
+</Layout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, var(--secondary-900) 0%, var(--accent-700) 100%);
+    color: white;
+    padding: 120px 0 var(--spacing-20);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="1000,100 1000,0 0,100"/></svg>');
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-16);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-6);
+    line-height: 1.1;
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-8);
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: var(--spacing-4);
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .marketing-services {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+  }
+
+  .service-category {
+    background: white;
+    padding: var(--spacing-8);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .service-category h3 {
+    margin-bottom: var(--spacing-6);
+    color: var(--gray-900);
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: var(--spacing-4);
+    border-bottom: 2px solid var(--accent-200);
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-6);
+  }
+
+  .service-card {
+    background: var(--gray-50);
+    padding: var(--spacing-6);
+    border-radius: var(--border-radius-lg);
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+
+  .service-card:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .service-icon {
+    background: var(--accent-100);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-600);
+    margin: 0 auto var(--spacing-4);
+  }
+
+  .service-card h4 {
+    margin-bottom: var(--spacing-3);
+    color: var(--gray-900);
+  }
+
+  .service-card p {
+    margin: 0;
+    color: var(--gray-600);
+    font-size: 0.9rem;
+  }
+
+  .strategy-section {
+    padding: var(--spacing-20) 0;
+    background: white;
+  }
+
+  .strategy-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-16);
+    align-items: center;
+  }
+
+  .strategy-text h2 {
+    margin-bottom: var(--spacing-4);
+  }
+
+  .strategy-text p {
+    margin-bottom: var(--spacing-8);
+  }
+
+  .strategy-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-4);
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-600);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .step-content h3 {
+    margin-bottom: var(--spacing-2);
+    color: var(--gray-900);
+  }
+
+  .step-content p {
+    margin: 0;
+    color: var(--gray-600);
+  }
+
+  .strategy-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .packages-section {
+    padding: var(--spacing-20) 0;
+    background: var(--gray-50);
+  }
+
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-8);
+  }
+
+  .package-card {
+    background: white;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-8);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .package-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .package-card.featured {
+    border-color: var(--accent-500);
+    transform: scale(1.05);
+  }
+
+  .package-ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--accent-500);
+    color: white;
+    padding: var(--spacing-2) var(--spacing-6);
+    font-size: 0.875rem;
+    font-weight: 600;
+    transform: rotate(45deg) translate(30%, -30%);
+    width: 150px;
+    text-align: center;
+  }
+
+  .package-header {
+    margin-bottom: var(--spacing-6);
+  }
+
+  .package-header h3 {
+    margin-bottom: var(--spacing-3);
+    color: var(--gray-900);
+  }
+
+  .package-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-600);
+    margin-bottom: var(--spacing-2);
+  }
+
+  .package-duration {
+    color: var(--gray-500);
+    font-size: 0.9rem;
+  }
+
+  .package-features ul {
+    list-style: none;
+    margin: 0 0 var(--spacing-8) 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .package-features li {
+    padding: var(--spacing-2) 0;
+    color: var(--gray-600);
+    position: relative;
+    padding-left: var(--spacing-6);
+  }
+
+  .package-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success-500);
+    font-weight: bold;
+  }
+
+  .metrics-section {
+    padding: var(--spacing-20) 0;
+    background: white;
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-8);
+  }
+
+  .metric-card {
+    background: var(--gray-50);
+    padding: var(--spacing-8);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .metric-card:hover {
+    background: white;
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .metric-icon {
+    background: var(--accent-100);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-600);
+    margin: 0 auto var(--spacing-4);
+  }
+
+  .metric-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-600);
+    margin-bottom: var(--spacing-2);
+  }
+
+  .metric-label {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-4);
+  }
+
+  .metric-card p {
+    margin: 0;
+    color: var(--gray-600);
+  }
+
+  .testimonials-section {
+    padding: var(--spacing-20) 0;
+    background: var(--gray-50);
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-8);
+  }
+
+  .testimonial-card {
+    background: white;
+    padding: var(--spacing-8);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .testimonial-stars {
+    margin-bottom: var(--spacing-4);
+    font-size: 1.2rem;
+  }
+
+  .testimonial-card blockquote {
+    margin: 0 0 var(--spacing-6) 0;
+    font-style: italic;
+    color: var(--gray-700);
+    line-height: 1.6;
+  }
+
+  .testimonial-author strong {
+    display: block;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-1);
+  }
+
+  .testimonial-author span {
+    color: var(--gray-500);
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 100px 0 var(--spacing-16);
+    }
+
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-12);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-cta {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .service-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .strategy-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-12);
+    }
+
+    .packages-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .package-card.featured {
+      transform: none;
+    }
+
+    .package-card.featured:hover {
+      transform: translateY(-4px);
+    }
+
+    .metrics-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</Layout>

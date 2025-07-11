@@ -1,0 +1,3 @@
+<!-- royalty-free person and publishing illustration, unsplash/pexels CDN -->
+<img src="https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&w=600" alt="Professional author" style="display:none;" />
+<img src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&w=600" alt="Publishing process" style="display:none;" />

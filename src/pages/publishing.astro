@@ -1,0 +1,771 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import ContactForm from '../components/ContactForm.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Professional Publishing Services | Western Publish"
+  description="Expert publishing support for self-publishing and traditional publishing paths. ISBN registration, distribution, print-on-demand, and comprehensive publishing guidance."
+  keywords="publishing services, self-publishing, traditional publishing, ISBN registration, book distribution, print-on-demand, publishing consultation"
+>
+  <Navigation />
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Professional Publishing Services</h1>
+          <p class="hero-subtitle">
+            Navigate the complex world of publishing with expert guidance. We provide comprehensive support for both self-publishing and traditional publishing paths.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary btn-lg">Start Publishing</a>
+            <a href="#services" class="btn btn-outline btn-lg">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.pexels.com/photos/256546/pexels-photo-256546.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional publishing services" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publishing Paths Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Choose Your Publishing Path</h2>
+        <p class="text-large">We support both self-publishing and traditional publishing routes, helping you choose the path that best fits your goals and circumstances.</p>
+      </div>
+      
+      <div class="paths-grid">
+        <div class="path-card">
+          <div class="path-icon">
+            <svg width="64" height="64" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+            </svg>
+          </div>
+          <h3>Self-Publishing</h3>
+          <p>Take control of your publishing journey with full creative and financial control over your work.</p>
+          
+          <div class="path-benefits">
+            <h4>Benefits:</h4>
+            <ul>
+              <li>Complete creative control</li>
+              <li>Higher royalty rates</li>
+              <li>Faster time to market</li>
+              <li>Retain all rights</li>
+              <li>Direct reader connection</li>
+            </ul>
+          </div>
+          
+          <div class="path-process">
+            <h4>Our Support:</h4>
+            <ul>
+              <li>ISBN registration and assignment</li>
+              <li>Print-on-demand setup</li>
+              <li>Distribution to major retailers</li>
+              <li>Metadata optimization</li>
+              <li>Publishing platform guidance</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="path-card">
+          <div class="path-icon">
+            <svg width="64" height="64" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <h3>Traditional Publishing</h3>
+          <p>Pursue traditional publication with expert guidance through the submission and acquisition process.</p>
+          
+          <div class="path-benefits">
+            <h4>Benefits:</h4>
+            <ul>
+              <li>Publisher marketing support</li>
+              <li>Advance payments</li>
+              <li>Editorial expertise</li>
+              <li>Wide distribution network</li>
+              <li>Industry credibility</li>
+            </ul>
+          </div>
+          
+          <div class="path-process">
+            <h4>Our Support:</h4>
+            <ul>
+              <li>Publisher research and targeting</li>
+              <li>Query letter writing</li>
+              <li>Book proposal development</li>
+              <li>Submission tracking</li>
+              <li>Contract negotiation guidance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="plans">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Our Plans & Services</h2>
+        <p class="text-large">Select any combination of services below. Choose what you need, as many as you want!</p>
+      </div>
+      <form class="plans-form" method="post" action="#contact">
+        <div class="grid grid-3">
+          <div class="service-card">
+            <input type="checkbox" id="ghostwriting" name="services" value="Ghostwriting Ebooks">
+            <label for="ghostwriting"><strong>Ghostwriting Ebooks</strong></label>
+            <p>Complete ghostwriting service for your book(s) just under $5,000. <br><em>Contact for pricing as it depends on pages, genre, style, etc.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="rewriting" name="services" value="Rewriting Ebook">
+            <label for="rewriting"><strong>Rewriting Ebook</strong></label>
+            <p>Complete rewriting of your book under $2,000. <br><em>Contact for exact pricing as it depends on pages, genre, style, etc.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="editing" name="services" value="Editing and Formatting">
+            <label for="editing"><strong>Editing and Formatting</strong></label>
+            <p>Formatting and editing of your book just for $200.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $149.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="standard-publishing" name="services" value="Standard Publishing Package">
+            <label for="standard-publishing"><strong>Standard Publishing Package</strong></label>
+            <p>Get your book published on Amazon just for $499. Book cover assistance, ISBN assistance included.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $399.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="global-publishing" name="services" value="Global Publishing Package">
+            <label for="global-publishing"><strong>Global Publishing Package</strong></label>
+            <p>Get your book published globally, on 400,000+ online retailers, and available on libraries, colleges, and universities on print-on-demand setup, just for $750.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $499.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="prelaunch-marketing" name="services" value="Pre-launch Ebook Marketing">
+            <label for="prelaunch-marketing"><strong>Pre-launch Ebook Marketing</strong></label>
+            <p>We'll do pre-launch marketing for your book just for $700.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $599.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="postlaunch-marketing" name="services" value="Post-launch Marketing">
+            <label for="postlaunch-marketing"><strong>Post-launch Marketing</strong></label>
+            <p>We'll do post-launch marketing just for $1,000.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $799.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="author-website" name="services" value="Author Website Development">
+            <label for="author-website"><strong>Author Website Development</strong></label>
+            <p>Get your professional author website under $2,500.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $1,999.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="podcast-interview" name="services" value="Podcast Interview">
+            <label for="podcast-interview"><strong>Podcast Interview with Emmy-award Winning Journalist</strong></label>
+            <p>Be on an interview where an Emmy award-winning journalist will interview you and ask about your book and book journey just for $2,000.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $1,299.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="legal-copyright" name="services" value="Legal USA Copyright">
+            <label for="legal-copyright"><strong>Legal USA Copyright for Your Work</strong></label>
+            <p>You published your book but folks can upload it to other platforms and misuse or damage your image. Get US legal copyright for your work just for $300.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $299.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="bestseller" name="services" value="Best Seller">
+            <label for="bestseller"><strong>Best Seller</strong></label>
+            <p>Picture this: you're a best seller in your category, top one globally, just under $5,000.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $2,499.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="blogging" name="services" value="Blogging">
+            <label for="blogging"><strong>Blogging</strong></label>
+            <p>Get blogging setup on your website and regular updates and blogs about your book to keep it evergreen, just for $25 per blog.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $9.99.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="isbn" name="services" value="ISBN">
+            <label for="isbn"><strong>ISBN</strong></label>
+            <p>Book is ready to publish but Amazon is treating you like an alien? You might need ISBN. Get it just $100.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $79.99.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="book-cover" name="services" value="Book Cover">
+            <label for="book-cover"><strong>Book Cover</strong></label>
+            <p>Get professional book cover for your book just for $150.<br><em>If you're a new client or had any contract with us in the last year, it'll be only $99.</em></p>
+          </div>
+          <div class="service-card">
+            <input type="checkbox" id="misc" name="services" value="Miscellaneous">
+            <label for="misc"><strong>Miscellaneous Service Related to Book & Publishing</strong></label>
+            <p>Let's discuss your unique needs!</p>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top:2rem;">
+          <button type="submit" class="btn btn-primary btn-lg">Contact Us About Selected Services</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Our Publishing Process</h2>
+        <p class="text-large">A step-by-step approach to getting your book published and distributed successfully.</p>
+      </div>
+      
+      <div class="process-timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">1</div>
+          <div class="timeline-content">
+            <h3>Publishing Strategy</h3>
+            <p>We assess your goals, target audience, and market position to recommend the best publishing path for your book.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker">2</div>
+          <div class="timeline-content">
+            <h3>Manuscript Preparation</h3>
+            <p>Ensure your manuscript is publication-ready with final editing, formatting, and cover design completion.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker">3</div>
+          <div class="timeline-content">
+            <h3>Publishing Setup</h3>
+            <p>Handle all technical aspects including ISBN registration, platform setup, and distribution channel configuration.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker">4</div>
+          <div class="timeline-content">
+            <h3>Launch Preparation</h3>
+            <p>Prepare for publication with metadata optimization, pricing strategy, and pre-launch marketing activities.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker">5</div>
+          <div class="timeline-content">
+            <h3>Publication & Distribution</h3>
+            <p>Launch your book across all selected platforms and distribution channels with ongoing support and monitoring.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories Section -->
+  <section class="success-stories-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Success Stories</h2>
+        <p class="text-large">Real authors, real success stories from our publishing services.</p>
+      </div>
+      
+      <div class="success-grid">
+        <div class="success-card">
+          <div class="success-stats">
+            <div class="stat">
+              <div class="stat-number">15,000+</div>
+              <div class="stat-label">Copies Sold</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">#1</div>
+              <div class="stat-label">Bestseller</div>
+            </div>
+          </div>
+          <div class="success-content">
+            <h3>"The Entrepreneur's Journey"</h3>
+            <p>"Western Publish's self-publishing support helped me launch my business book successfully. Their distribution network got my book into major retailers, and their guidance on pricing and positioning was invaluable."</p>
+            <div class="success-author">
+              <strong>Robert Chen</strong>
+              <span>Business Author</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="success-card">
+          <div class="success-stats">
+            <div class="stat">
+              <div class="stat-number">$50K+</div>
+              <div class="stat-label">Advance</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Book Deal</div>
+            </div>
+          </div>
+          <div class="success-content">
+            <h3>"Historical Fiction Series"</h3>
+            <p>"The traditional publishing support was exceptional. They helped me craft the perfect query letter and book proposal that landed me a three-book deal with a major publisher."</p>
+            <div class="success-author">
+              <strong>Maria Rodriguez</strong>
+              <span>Fiction Author</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="success-card">
+          <div class="success-stats">
+            <div class="stat">
+              <div class="stat-number">25,000+</div>
+              <div class="stat-label">Copies Sold</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">4.8</div>
+              <div class="stat-label">Star Rating</div>
+            </div>
+          </div>
+          <div class="success-content">
+            <h3>"Personal Development Guide"</h3>
+            <p>"The comprehensive publishing support took all the technical stress away. I could focus on writing while they handled ISBN registration, distribution, and all the publishing details."</p>
+            <div class="success-author">
+              <strong>David Thompson</strong>
+              <span>Self-Help Author</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Frequently Asked Questions</h2>
+        <p class="text-large">Get answers to common questions about our publishing services.</p>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>How long does the publishing process take?</h3>
+          <p>The timeline varies by publishing path. Self-publishing typically takes 2-4 weeks once your manuscript is ready. Traditional publishing can take 6-18 months depending on the submission and acquisition process.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Do I retain rights to my book?</h3>
+          <p>With self-publishing, you retain all rights to your work. With traditional publishing, rights are typically shared with the publisher according to the contract terms, which we help you understand and negotiate.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>What's included in your publishing services?</h3>
+          <p>Our services include ISBN registration, distribution setup, platform configuration, metadata optimization, and ongoing support. Additional services like editing and cover design are available separately.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can you help with both print and digital publishing?</h3>
+          <p>Yes, we support both print-on-demand and digital publishing across all major platforms including Amazon, Apple Books, Barnes & Noble, and many others.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>What are the costs involved?</h3>
+          <p>Costs vary based on your chosen services and publishing path. We provide transparent pricing with no hidden fees. Self-publishing services start at $299, while traditional publishing support is consultation-based.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Do you provide ongoing support after publication?</h3>
+          <p>Yes, we offer ongoing support including royalty tracking, sales reporting, distribution monitoring, and assistance with updates or new editions of your book.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <ContactForm 
+    title="Ready to Publish Your Book?"
+    subtitle="Start your publishing journey today. Contact us to discuss your book and learn how we can help you achieve your publishing goals."
+  />
+  
+  <!-- Footer -->
+  <Footer />
+</Layout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, var(--primary-900) 0%, var(--secondary-700) 100%);
+    color: white;
+    padding: 120px 0 var(--spacing-20);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="1000,100 1000,0 0,100"/></svg>');
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-16);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-6);
+    line-height: 1.1;
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-8);
+    color: var(--primary-100);
+    line-height: 1.6;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: var(--spacing-4);
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .paths-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-12);
+    margin-top: var(--spacing-16);
+  }
+
+  .path-card {
+    background: white;
+    padding: var(--spacing-8);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .path-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .path-icon {
+    background: var(--primary-100);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-600);
+    margin-bottom: var(--spacing-6);
+  }
+
+  .path-card h3 {
+    margin-bottom: var(--spacing-4);
+    color: var(--gray-900);
+    font-size: 1.5rem;
+  }
+
+  .path-card > p {
+    margin-bottom: var(--spacing-6);
+    color: var(--gray-600);
+    font-size: 1.125rem;
+  }
+
+  .path-benefits, .path-process {
+    margin-bottom: var(--spacing-6);
+  }
+
+  .path-benefits h4, .path-process h4 {
+    margin-bottom: var(--spacing-3);
+    color: var(--gray-900);
+    font-size: 1.125rem;
+  }
+
+  .path-benefits ul, .path-process ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .path-benefits li, .path-process li {
+    padding: var(--spacing-2) 0;
+    color: var(--gray-600);
+    position: relative;
+    padding-left: var(--spacing-6);
+  }
+
+  .path-benefits li::before, .path-process li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success-500);
+    font-weight: bold;
+  }
+
+  .services-section {
+    padding: var(--spacing-20) 0;
+    background: var(--gray-50);
+  }
+
+  .service-card {
+    background: white;
+    padding: var(--spacing-8);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .service-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--primary-100);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-600);
+    margin: 0 auto var(--spacing-6);
+  }
+
+  .service-card h3 {
+    margin-bottom: var(--spacing-4);
+    color: var(--gray-900);
+  }
+
+  .service-card p {
+    margin: 0;
+    color: var(--gray-600);
+  }
+
+  .process-section {
+    padding: var(--spacing-20) 0;
+    background: white;
+  }
+
+  .process-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--primary-200);
+  }
+
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-12);
+    position: relative;
+  }
+
+  .timeline-marker {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-600);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-content {
+    flex: 1;
+    background: var(--gray-50);
+    padding: var(--spacing-6);
+    border-radius: var(--border-radius-lg);
+    margin-top: var(--spacing-4);
+  }
+
+  .timeline-content h3 {
+    margin-bottom: var(--spacing-3);
+    color: var(--gray-900);
+  }
+
+  .timeline-content p {
+    margin: 0;
+    color: var(--gray-600);
+  }
+
+  .success-stories-section {
+    padding: var(--spacing-20) 0;
+    background: var(--gray-50);
+  }
+
+  .success-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-8);
+  }
+
+  .success-card {
+    background: white;
+    padding: var(--spacing-8);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+  }
+
+  .success-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .success-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: var(--spacing-6);
+    padding-bottom: var(--spacing-6);
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-600);
+    margin-bottom: var(--spacing-1);
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .success-content h3 {
+    margin-bottom: var(--spacing-4);
+    color: var(--gray-900);
+  }
+
+  .success-content p {
+    margin-bottom: var(--spacing-6);
+    color: var(--gray-600);
+    font-style: italic;
+  }
+
+  .success-author strong {
+    display: block;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-1);
+  }
+
+  .success-author span {
+    color: var(--gray-500);
+    font-size: 0.875rem;
+  }
+
+  .faq-section {
+    padding: var(--spacing-20) 0;
+    background: white;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-8);
+  }
+
+  .faq-item {
+    background: var(--gray-50);
+    padding: var(--spacing-6);
+    border-radius: var(--border-radius-lg);
+    transition: all 0.3s ease;
+  }
+
+  .faq-item:hover {
+    background: white;
+    box-shadow: var(--shadow-md);
+  }
+
+  .faq-item h3 {
+    margin-bottom: var(--spacing-4);
+    color: var(--gray-900);
+  }
+
+  .faq-item p {
+    margin: 0;
+    color: var(--gray-600);
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 100px 0 var(--spacing-16);
+    }
+
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-12);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-cta {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .paths-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .process-timeline::before {
+      left: 20px;
+    }
+
+    .timeline-marker {
+      width: 40px;
+      height: 40px;
+      font-size: 1rem;
+    }
+
+    .timeline-item {
+      gap: var(--spacing-4);
+    }
+
+    .success-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</Layout>
