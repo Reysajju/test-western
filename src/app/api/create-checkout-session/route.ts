@@ -26,7 +26,7 @@ export async function POST(request: Request) {
         cancel_url: cancelUrl,
       });
       return NextResponse.json({ sessionId: session.id, url: session.url });
-    } catch (stripeError) {
+    } catch {
       return NextResponse.json(
         { error: 'Payments are currently unavailable.' },
         { status: 503 }
