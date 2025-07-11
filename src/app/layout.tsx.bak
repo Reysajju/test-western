@@ -1,0 +1,54 @@
+import type { Metadata } fr  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className="scroll-smooth">
+      <head>
+        <script src="https://js.stripe.com/v3/" async />
+      </head>
+      <body className={`${inter.variable} antialiased bg-white`}>
+        <div className="flex flex-col min-h-screen">
+          <Navigation />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
+      </body>
+    </html>
+  );
+}mport { Inter } from "next/font/google";
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
+import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+export const metadata: Metadata = {
+  title: "Western Medical Writer - Professional Medical Writing Services",
+  description: "Expert medical writing, editing, and publication support services for healthcare professionals and researchers.",
+  keywords: "medical writing, medical editing, publication support, healthcare communications, clinical research",
+  authors: [{ name: "Western Medical Writer" }],
+  openGraph: {
+    title: "Western Medical Writer - Professional Medical Writing Services",
+    description: "Expert medical writing, editing, and publication support services for healthcare professionals and researchers.",
+    type: "website",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
+    </html>
+  );
+}
