@@ -12,19 +12,26 @@ export async function POST(request: Request) {
       );
     }
 
-    const session = await createCheckoutSession({
-      mode: 'payment',
-      line_items: [
-        {
-          price: priceId,
-          quantity: 1,
-        },
-      ],
-      success_url: successUrl,
-      cancel_url: cancelUrl,
-    });
-
-    return NextResponse.json({ sessionId: session.id, url: session.url });
+    // If Stripe is not configured, fail gracefully
+    try {
+      const session = await createCheckoutSession({
+        mode: 'payment',
+        line_items: [
+          {
+            price: priceId,
+            quantity: 1,
+          },
+        ],
+        success_url: successUrl,
+        cancel_url: cancelUrl,
+      });
+      return NextResponse.json({ sessionId: session.id, url: session.url });
+    } catch (stripeError) {
+      return NextResponse.json(
+        { error: 'Payments are currently unavailable.' },
+        { status: 503 }
+      );
+    }
   } catch (error) {
     console.error('Error creating checkout session:', error);
     return NextResponse.json(

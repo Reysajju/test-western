@@ -16,6 +16,11 @@ export function useStripeCheckout() {
   const [error, setError] = useState<string | null>(null);
 
   const createCheckoutSession = async (priceId: string) => {
+    const key = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+    if (!key) {
+      setError('Payments are currently unavailable.');
+      return;
+    }
     try {
       setLoading(true);
       setError(null);
@@ -23,7 +28,8 @@ export function useStripeCheckout() {
       // Load Stripe dynamically
       const stripe = (await loadStripe()) as StripeJSInstance | undefined;
       if (!stripe) {
-        throw new Error('Stripe failed to load');
+        setError('Payments are currently unavailable.');
+        return;
       }
 
       const response = await fetch('/api/create-checkout-session', {
